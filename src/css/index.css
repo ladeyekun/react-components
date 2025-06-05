@@ -161,6 +161,7 @@ nav {
 .button.secondary {
   background-color: #fff;
   color: #267cb5;
+  border: 1px solid #267cb5;
 }
 
 .button.primary:hover {
