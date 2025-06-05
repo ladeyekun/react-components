@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+/*----------------------*/
+/* General Rules        */
+/*----------------------*/
+
+:root {
+  --app-header-height: 70px;
+  --app-header-bg-color: #682CC0;
+  --app-header-font-color: #f6f3fc;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Nunito Sans", "Noto Sans", Arial, sans-serif;
+  background-color: var(--app-background-color);
+  color: var(--app-font-color);
+}
+
+.container {
+  width: min(100% - 32px, 1200px);
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-center {
+  place-items: center;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+/*----------------------*/
+/* Header               */
+/*----------------------*/
+
+header {
+  height: var(--app-header-height);
+  background-color: var(--app-header-bg-color);
+
+
+  h1 {
+    line-height: var(--app-header-height);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--app-header-font-color);
+  }
+}
+
+nav {
+  ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 1.8rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+    li {
+      line-height: var(--app-header-height);
+      font-size: 18px;
+      font-weight: 500;
+
+      a {
+        text-decoration: none;
+        color: var(--app-header-font-color);
+        font-weight: 400;
+        transition: all 0.3s ease-in-out;
+      }
+
+      a:hover{
+        color: #007bff;
+      }
+    }
+  }
+}
+
+/*----------------------*/
+/* Hero Banner        */
+/*----------------------*/
+
+.hero-banner {
+  min-height: 40svh;
+  background: #fff url(../images/hero-banner-1.jpg) center center / cover no-repeat;
+}
+
+.hero-banner-main {
+  display: grid;
+  place-items: center;
+  height: calc(100% - 60px);
+}
+
+.hero-banner-content {
+  padding-top: 30px;
+  text-align: center;
+  width: 500px;
+
+  h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #6177c5;
+  }
+
+  p {
+    margin-top: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6177c5;
+    letter-spacing: 0.2px;
+  }
+
+  .hero-banner-buttons {
+    margin-top: 45px;
+
+    a {
+      display: inline-block;
+    }
+
+    a + a {
+      margin-left: 15px;
+    }
+  }
+}
+
+.button {
+  height: 46px;
+  padding: 10px 25px;
+  border-radius: 6px; 
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;  
+  border: 1px solid rgb(0 0 0 / 2%);
+}
+
+.button.primary {
+  background-color: #267cb5;
+  color: #fff;
+}
+
+.button.secondary {
+  background-color: #fff;
+  color: #267cb5;
+}
+
+.button.primary:hover {
+  background-color: #267cb5;
+}
+
+.button.secondary:hover {
+  color: #267cb5;
+}
+
+
+/*----------------------*/
+/* Gallery        */
+/*----------------------*/
+.galleries {
+  padding: 50px;
+  background-color: #f2f5f7;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.gallery-item {
+  flex: 0 0 calc(25% - 12px);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+
+/**************/
+/*  Footer    */
+/**************/
+
+footer {
+  height: 60px;
+  background-color: #cacaca;
+
+  ul {
+    list-style: none;
+
+    div {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      border: 1px solid rgb(0 0 0 / 20%);
+    }
+  }
+
+  .copyright {
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(0 0 0 / 80%);
+  }
+
+  a {
+    color: rgb(0 0 0 / 60%);
+    font-size: var(--app-footer-font-size);
+  }
+
+  a:hover div {
+    background-color: #fff;
+  }
+
+  a:hover .fa-facebook-f {
+    color: #0866ff;
+  }
+
+  a:hover .fa-instagram {
+    color: #fd07b0;
+  }
+
+  a:hover .fa-x-twitter {
+    color: #000;
+  }
+}
