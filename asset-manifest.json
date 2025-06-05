@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/react-components/static/css/main.ca063289.css",
+    "main.js": "/react-components/static/js/main.309e780a.js",
+    "static/media/pool.jpg": "/react-components/static/media/pool.f852fcbe629542286ff8.jpg",
+    "static/media/gym.jpg": "/react-components/static/media/gym.93ce94219a0759f12ac0.jpg",
+    "static/media/spa.jpg": "/react-components/static/media/spa.6d50ff82d2146334f789.jpg",
+    "static/media/hero-banner-1.jpg": "/react-components/static/media/hero-banner-1.5eb378e11b326f655fa9.jpg",
+    "static/media/food.jpg": "/react-components/static/media/food.11d8817acce7b8137df0.jpg",
+    "index.html": "/react-components/index.html",
+    "main.ca063289.css.map": "/react-components/static/css/main.ca063289.css.map",
+    "main.309e780a.js.map": "/react-components/static/js/main.309e780a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca063289.css",
+    "static/js/main.309e780a.js"
+  ]
+}
